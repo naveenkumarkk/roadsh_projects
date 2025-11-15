@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* The above wildcard is to reset the default. 
+On default the browser will have a margin and padding sizes. We need to take control */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    /* padding: 2em; */
+}
+
+.container{
+    border:10px double yellow;
+    outline: 5px solid purple;
+
+    outline-offset: 5px;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+p{
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    font-family: 'Courier New',monospace,sans-serif;
+}
+.circle{
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+    margin: 3rem auto;
+    border-radius: 50px; /* Half of the widhth and the height */
+}
+
+/* Typography: It is the way of the text that is arranged and presented  */
+
+a {
+    text-decoration: none; /*To remove the underline in the link*/
+    cursor: pointer;
+    color: red; /* To change the default color to this color*/
+}
+/* Pseudo Selector. The order of this selector is important
+visited, hover and active 
+*/
+a:visited {
+    color: black;
+}
+
+a:hover{
+    /* color: dodgerblue; */
+    opacity: 0.4;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+
+ul{
+    list-style-type: disc;
+    padding: 2em;
+    text-align: center;
+    list-style-position:inside;
+    line-height: 1.6;
+    /* list-style-image:url('File Path') -> To use images as a list style instead of numbers or other style option */
+}
+
+ul li {
+    color:  red;
+}
+
+/* To change the particular list item */
+ul li:nth-child(2) {
+    color:  bisque;
+}
+
+/* To change the particular list item */
+ul li:nth-child(odd) {
+    color:  lawngreen;
+}
+
+::marker {
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    content: 'Only $5 >> ';
+}
