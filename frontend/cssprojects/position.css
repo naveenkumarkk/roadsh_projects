@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth; 
+    /* To make the scrool behaviour from instaneous to smooth */
+}
+
+body{
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container{
+    border:3px dashed black;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container{
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+    position: relative;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absoulte{
+    background-color: #00f;
+    position: absolute; /* Positioning:absolute needs two things, one it will position based on its ancestor elements 
+    and it needs left/top/right/bottom mentioning in the same class or specificity*/
+    top: 3px;
+    left: 0;
+    z-index: 1; /*If we want to make the position absolute on the top*/
+   
+}
+
+.relative{
+    background-color: red;
+    position: relative; /* Positioning:relative will aloways relative to the parent container*/
+    top: 3px;
+    left: 80px;
+   
+}
+
+.fixed{
+    background-color: green;
+    position: fixed;
+    top: 100px;
+}
+
+.sticky{
+    background-color: black;
+    position: sticky;
+    top: 100px;
+}
+

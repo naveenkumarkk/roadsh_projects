@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+
+.navbar {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    text-decoration: none;
+    margin-inline: 0.5rem;
+    color: black;
+}
+
+nav li a:focus,
+nav li a:hover {
+    /* text-decoration: underline; */
+    color: slategray;
+}
+
+.maincontainer .intro {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    border: 2px solid black;
+}
+
+.container .projects {
+    border-right: 1px solid black;
+    padding: 1rem;
+}
+
+.container .workexperience {
+    border-right: 1px solid black;
+    padding: 1rem;
+}
+
+.container .education {
+    padding: 1rem;
+}
+
+.container .education ul {
+    list-style-type: square;
+}
+
+
+.review {
+    display: flex;
+    justify-content: space-around;
+    max-width: 50%;
+    margin: auto;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 2em 2em 2em 2em;
+    padding-inline: 1rem;
+    width: 20%;
+}
+.card .review-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+}
+.card .review-proffesor{
+     font-size: 0.7rem;
+     font-weight: 500;
+     color: gainsboro;
+}
+
+
+
